@@ -6,7 +6,7 @@ export function App() {
     <div>
       <h1>Task Management</h1>
       {tasks.map((task) => (
-        <TaskItem task={task} />
+        <TaskItem task={task} key={task.id} />
       ))}
     </div>
   );
