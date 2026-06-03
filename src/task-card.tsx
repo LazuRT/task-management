@@ -1,9 +1,16 @@
-export function TaskItem() {
-  const task = {
-    title: "Work 1",
-    description: "Submit Document",
-    isDone: false,
-  };
+type Task = {
+  id: number;
+  title: string;
+  description: string;
+  isDone: boolean;
+};
+
+export function TaskItem({ task }: { task: Task }) {
+  // const task = {
+  //   title: "Work 1",
+  //   description: "Submit Document",
+  //   isDone: false,
+  // };
   return (
     <div>
       <h2>{task.title}</h2>
