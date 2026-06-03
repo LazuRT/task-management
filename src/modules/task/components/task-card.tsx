@@ -1,9 +1,4 @@
-type Task = {
-  id: number;
-  title: string;
-  description: string;
-  isDone: boolean;
-};
+import type { Task } from "../task.type";
 
 export function TaskItem({ task }: { task: Task }) {
   // const task = {
