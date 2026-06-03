@@ -1,8 +1,13 @@
 export function TaskItem() {
+  const title = "Work 1";
+  const description = "Submit Document";
+  const isDone = false;
+
   return (
     <div>
-      <h2>Work 1</h2>
-      <p>Submit document</p>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <p>{isDone ? "Done" : "Not Done"}</p>
     </div>
   );
 }
