@@ -1,11 +1,6 @@
 import type { Task } from "../task.type";
 
 export function TaskCard({ task }: { task: Task }) {
-  // const task = {
-  //   title: "Work 1",
-  //   description: "Submit Document",
-  //   isDone: false,
-  // };
   return (
     <div>
       <h2>{task.title}</h2>
