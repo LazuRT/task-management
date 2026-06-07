@@ -1,4 +1,4 @@
-import { TaskItem } from "../../task/components/task-card";
+import { TaskCard } from "../../task/components/task-card";
 import type { TaskList } from "../task-list.type";
 
 export function TaskList({ list }: { list: TaskList }) {
@@ -7,7 +7,7 @@ export function TaskList({ list }: { list: TaskList }) {
       <h2>{list.title} List</h2>
 
       {list.tasks.map((task) => (
-        <TaskItem key={task.id} task={task} />
+        <TaskCard key={task.id} task={task} />
       ))}
     </div>
   );
