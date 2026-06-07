@@ -1,4 +1,6 @@
-export const taskLists = [
+import type { TaskLists } from "./task-list.type";
+
+export const taskLists: TaskLists = [
   {
     id: 1,
     title: "Personal",
