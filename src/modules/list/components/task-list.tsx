@@ -1,7 +1,7 @@
 import { TaskItem } from "../../task/components/task-card";
 import type { TaskList } from "../tasklist.type";
 
-export function TaskLists({ list }: { list: TaskList }) {
+export function TaskList({ list }: { list: TaskList }) {
   return (
     <div>
       <h2>{list.title} List</h2>
