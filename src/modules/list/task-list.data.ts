@@ -1,4 +1,4 @@
-import type { TaskLists } from "./tasklist.type";
+import type { TaskLists } from "./task-list.type";
 
 export const taskLists: TaskLists = [
   {
