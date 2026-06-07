@@ -5,3 +5,5 @@ export type TaskList = {
   title: string;
   tasks: Task[];
 };
+
+export type TaskLists = TaskList[];
