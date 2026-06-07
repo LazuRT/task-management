@@ -1,6 +1,6 @@
 import type { Task } from "../task.type";
 
-export function TaskItem({ task }: { task: Task }) {
+export function TaskCard({ task }: { task: Task }) {
   // const task = {
   //   title: "Work 1",
   //   description: "Submit Document",
