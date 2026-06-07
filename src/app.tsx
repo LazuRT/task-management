@@ -1,5 +1,5 @@
-import { TaskList } from "./modules/list/components/task-list";
-import { taskLists } from "./modules/list/tasklist.data";
+import { TaskList } from "./modules/task-list/components/task-list";
+import { taskLists } from "./modules/task-list/tasklist.data";
 
 export function App() {
   return (
