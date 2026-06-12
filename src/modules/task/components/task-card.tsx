@@ -11,13 +11,15 @@ export function TaskCard({ task }: { task: Task }) {
   return (
     <Card size="sm">
       <CardHeader>
-        <CardTitle>{task.title}</CardTitle>
+        <CardTitle>
+          <span>{task.isDone ? "✅" : "❌"} </span>
+          {task.title}
+        </CardTitle>
       </CardHeader>
       <CardContent>
         <CardDescription>
           <p>{task.description}</p>
         </CardDescription>
-        <p>{task.isDone ? "Done" : "Not Done"}</p>
       </CardContent>
     </Card>
   );
