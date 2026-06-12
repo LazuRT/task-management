@@ -4,17 +4,20 @@ import { taskLists } from "./modules/task-list/task-list.data";
 
 export function App() {
   return (
-    <div>
-      <h1 className="text-5xl font-bold">Task Management</h1>
+    <div className="mx-auto max-w-lg px-4 py-8">
+      <h1 className="text-3xl font-bold">Task Management</h1>
 
-      <section>
+      {/* <section>
         <Button>Test Button</Button>
         <Button variant={"outline"}>Test Button</Button>
-      </section>
-
-      {taskLists.map((list) => (
-        <TaskList key={list.id} list={list} />
-      ))}
+      </section> */}
+      <ul className="flex flex-col gap-4 p-4">
+        {taskLists.map((list) => (
+          <li>
+            <TaskList key={list.id} list={list} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

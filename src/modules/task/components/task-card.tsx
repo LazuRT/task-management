@@ -1,11 +1,24 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import type { Task } from "../task.type";
 
 export function TaskCard({ task }: { task: Task }) {
   return (
-    <div>
-      <h2>{task.title}</h2>
-      <p>{task.description}</p>
-      <p>{task.isDone ? "Done" : "Not Done"}</p>
-    </div>
+    <Card size="sm">
+      <CardHeader>
+        <CardTitle>{task.title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>
+          <p>{task.description}</p>
+        </CardDescription>
+        <p>{task.isDone ? "Done" : "Not Done"}</p>
+      </CardContent>
+    </Card>
   );
 }
