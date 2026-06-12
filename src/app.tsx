@@ -4,7 +4,7 @@ import { taskLists } from "./modules/task-list/task-list.data";
 export function App() {
   return (
     <div>
-      <h1>Task Management</h1>
+      <h1 className="text-5xl font-bold">Task Management</h1>
 
       {taskLists.map((list) => (
         <TaskList key={list.id} list={list} />
