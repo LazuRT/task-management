@@ -36,7 +36,7 @@ export function AddList() {
             </FieldGroup>
             <DialogFooter>
               <DialogClose render={<Button variant="outline">Cancel</Button>} />
-              <Button type="submit">Save changes</Button>
+              <Button type="submit">Add List</Button>
             </DialogFooter>
           </DialogContent>
         </form>
